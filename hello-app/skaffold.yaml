@@ -20,11 +20,11 @@ build:
   artifacts:
   - context: .
     image: hello-app
-##deploy:
-##  kubectl:
-##    manifests:
-##    - manifests/helloweb-deployment.yaml
-##    - manifests/helloweb-service-load-balancer.yaml
+deploy:
+  kubectl:
+    manifests:
+    - manifests/helloweb-deployment.yaml
+    - manifests/helloweb-service-load-balancer.yaml
 # profiles:
 # - name: cloudbuild
 #   build:
