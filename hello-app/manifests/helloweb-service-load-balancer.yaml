@@ -19,11 +19,4 @@ metadata:
   labels:
     app: hello
     tier: web
-spec:
-  type: LoadBalancer
-  ports:
-  - port: 80
-  selector:
-    app: hello
-    tier: web
 # [END container_helloapp_service_load_balancer]
