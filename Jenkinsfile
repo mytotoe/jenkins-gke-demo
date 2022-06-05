@@ -54,6 +54,7 @@ spec:
       port: 80
       targetPort: 8080
           sh "kubectl rollout status deployments/hello-app"
+ """
         }
       }
     }
