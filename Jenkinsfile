@@ -29,7 +29,7 @@ kind: Deployment
 metadata:
   name: hello-app
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: hello-app
