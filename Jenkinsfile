@@ -14,7 +14,7 @@ pipeline {
         dir("hello-app") {
           container("gcloud") {
             // Cheat by using Cloud Build to help us build our container
-            bash "gcloud builds submit -t ${params.IMAGE_URL}:${GIT_COMMIT}"
+            sh "gcloud builds submit -t ${params.IMAGE_URL}:${GIT_COMMIT}"
            // sh "gcloud builds submit ${params.IMAGE_URL}:${GIT_COMMIT}"
           }
         }
